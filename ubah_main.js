@@ -112,7 +112,7 @@ function canvasTask () {
 	var sisko = view.exportroot.sisko;
 	var mies_vaal = view.exportroot.mies_vaal;
 	var nainen_vaal = view.exportroot.nainen_vaal;
-  var tx_veli = view.exportroot.tx_veli;
+  	var tx_veli = view.exportroot.tx_veli;
 	var tx_sisko = view.exportroot.tx_sisko;
 	var tx_tytto = view.exportroot.tx_tytto;
 	var tx_poika = view.exportroot.tx_poika;
