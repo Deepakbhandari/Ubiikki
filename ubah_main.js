@@ -77,7 +77,7 @@ function canvasTask () {
 
 
 
-	var steps = [
+	/*var steps = [
 		{sound:"ali_-_tassa_on_ubahin_perhe"},
 		{sound:"ali_-_han_on_aiti"},
 		{sound:"ali_-_han_on_isa"},
@@ -94,7 +94,7 @@ function canvasTask () {
 	for (var i = 0; i < steps.length; i++) {
 		steps[i].sound = 'sounds/'+steps[i].sound;
 		sManifest.push(steps[i].sound);
-	};
+	};*/
 
 
 	this.initEdit = function ()  {};
