@@ -106,14 +106,14 @@ function canvasTask () {
 		function bOver (e)
 		{
 			var mc = event.target;
-			mc.gotoAndStop(2);
+			mc.gotoAndStop(2);//////// ????? Maybe should be 1?
 		}
 		function bOut (e)
 		{
 			var mc = event.target;
-			mc.gotoAndStop(1);
+			mc.gotoAndStop(1); //////// ????? Maybe should be 0?
 		}
-		function syncAnim ()
+		function syncAnim () //////// ????? syncAnim (ce)? Where is this called? If there was a function call on flash timeline, that wont work here. You need to addListener.
 		{
 			try{
 				this["b" + ce.data.b].gotoAndStop(ce.data.fr);
@@ -128,8 +128,10 @@ function canvasTask () {
 		}
 		function init ()
 		{
-			var startTime = 2;
-
+			var startTime = 2; //////// ????? Should be 2000. Milliseconds!
+			
+			//////// ????? instance on SoundManager should  created. sPlayer = new SoundManager();
+			
 			setTimeOut(function() { sPlayer.playSound( "tervetuloaopiskelemaan.mp3" ); }, startTime );
 
 			setTimeOut(function() { b0.gotoAndStop(2); b1.gotoAndStop(2); b2.gotoAndStop(2); },startTime + 5.5);
@@ -150,7 +152,9 @@ function canvasTask () {
 			startTime = 24;
 
 			setTimeOut(function() { sPlayer.playSound( flashPath + soundFolder + "vilu_mai_jos_haluat_opiskella.mp3" ); },startTime);
-			setTimeOut(function() { anim.gotoAndPlay("a0"); },startTime);
+			
+			
+			setTimeOut(function() { anim.gotoAndPlay("a0"); },startTime); //////// ????? Where is anim defined?
 
 			startTime = 32;
 
