@@ -129,7 +129,11 @@ function canvasTask () {
 	var bub_mies = view.exportroot.bub_mies;
 
 	var btnAgain = view.exportRoot.btnAgain;
-
+	
+	///////// ?????? I dont think Text, Container or Movieclip object has style property
+	// try instead veli_vaal.alpha = 0;
+	// tx_veli.alpha = 0;
+	
 	veli_vaal.style.opacity = 0; // poika vaalea
 	veli.style.opacity = 0; // poika tumma
 	sisko_vaal.style.opacity = 0; // tyttö vaalea
